@@ -1,0 +1,94 @@
+/* ===============================================
+   SISTEM PAKAR EVALUASI KINERJA - AnterAja
+   Global Design System
+   =============================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Brand Colors */
+  --brand-primary: #6C63FF;
+  --brand-secondary: #48C9B0;
+  --brand-accent: #FF6584;
+  --brand-warning: #F5A623;
+  --brand-danger: #E74C3C;
+  --brand-success: #27AE60;
+
+  /* Gradient Palette */
+  --gradient-hero: linear-gradient(135deg, #0F0C29 0%, #302B63 50%, #24243E 100%);
+  --gradient-card: linear-gradient(145deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%);
+  --gradient-primary: linear-gradient(135deg, #6C63FF 0%, #48C9B0 100%);
+  --gradient-danger: linear-gradient(135deg, #E74C3C 0%, #FF6584 100%);
+  --gradient-success: linear-gradient(135deg, #27AE60 0%, #48C9B0 100%);
+  --gradient-warning: linear-gradient(135deg, #F5A623 0%, #F39C12 100%);
+
+  /* Neutral */
+  --bg-dark: #0D0B1E;
+  --bg-card: #1A1733;
+  --bg-input: rgba(255, 255, 255, 0.06);
+  --border-subtle: rgba(255, 255, 255, 0.1);
+  --border-focus: rgba(108, 99, 255, 0.6);
+
+  /* Text */
+  --text-primary: #F0EEFF;
+  --text-secondary: #A09DC0;
+  --text-muted: #6B6890;
+
+  /* Spacing */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+
+  /* Shadows */
+  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --shadow-glow: 0 0 40px rgba(108, 99, 255, 0.2);
+  --shadow-btn: 0 4px 20px rgba(108, 99, 255, 0.4);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-primary);
+  min-height: 100vh;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--brand-primary);
+  border-radius: 3px;
+}
+
+/* Animated background particles */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: 
+    radial-gradient(ellipse at 20% 20%, rgba(108, 99, 255, 0.12) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 80%, rgba(72, 201, 176, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 60% 10%, rgba(255, 101, 132, 0.06) 0%, transparent 40%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}
