@@ -1,6 +1,6 @@
 # Sistem Pakar Evaluasi Kinerja Pegawai AnterAja
 
-> Sistem Pakar berbasis **Certainty Factor (CF)** dengan Forward Chaining untuk evaluasi kinerja pegawai kurir AnterAja.
+> Sistem Pakar berbasis **Certainty Factor (CF)** dengan Backward Chaining untuk evaluasi kinerja pegawai kurir AnterAja.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
 
@@ -46,12 +46,6 @@ Buka `http://localhost:5173` di browser.
 npm run build
 ```
 
-## ☁️ Deploy ke Vercel
-
-1. Push ke GitHub
-2. Import repo di [vercel.com](https://vercel.com)
-3. Framework: **Vite**, Build: `npm run build`, Output: `dist`
-4. Deploy!
 
 ## 🗂️ Struktur Folder
 
