@@ -99,7 +99,7 @@ function App() {
         <div className={styles.footerInner}>
           <span>© 2025 Sistem Pakar Evaluasi Kinerja — AnterAja</span>
           <span className={styles.footerDivider}>·</span>
-          <span>Metode: Certainty Factor + Forward Chaining</span>
+          <span>Metode: Certainty Factor + Backward Chaining</span>
           <span className={styles.footerDivider}>·</span>
           <span>Built with React + Vite</span>
         </div>

@@ -42,7 +42,7 @@ const Header = () => {
             <span className={styles.heroGradient}> Pegawai</span>
           </h1>
           <p className={styles.heroSubtitle}>
-            Sistem Pakar berbasis <strong>Certainty Factor</strong> dengan Forward Chaining —
+            Sistem Pakar berbasis <strong>Certainty Factor</strong> dengan Backward Chaining —
             penilaian objektif berbasis Disiplin, Produktivitas, dan Kehadiran.
           </p>
           <div className={styles.heroStats}>
